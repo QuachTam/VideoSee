@@ -9,6 +9,7 @@
 #import "VCMenu.h"
 #import "CustomCellDropDownMenu.h"
 #import "CustomCellBackground.h"
+#import "VCGroups.h"
 
 static NSString *stringIdentify = @"CustomCellDropDownMenu";
 @interface VCMenu ()<UITableViewDataSource, UITableViewDelegate>{
@@ -75,8 +76,7 @@ static NSString *stringIdentify = @"CustomCellDropDownMenu";
         return;
     }
     // otherwise we'll create a new frontViewController and push it with animation
-    VCQuestions *newFrontController = [[VCQuestions alloc] init];
-    newFrontController.textSection = [self.datas objectAtIndex:indexPath.row];
+    VCGroups *newFrontController = [[VCGroups alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:newFrontController];
     [revealController pushFrontViewController:navigationController animated:YES];
     _presentedRow = row;  // <- store the presented row

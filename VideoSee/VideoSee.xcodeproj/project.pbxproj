@@ -217,13 +217,14 @@
 			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
-		FB48907A1C229E6000FB18C5 /* VCVideos */ = {
+		FB48907A1C229E6000FB18C5 /* VCGroups */ = {
 			isa = PBXGroup;
 			children = (
 				FB48907B1C229E7900FB18C5 /* VCGroups.h */,
 				FB48907C1C229E7900FB18C5 /* VCGroups.m */,
 				FB48907D1C229E7900FB18C5 /* VCGroups.xib */,
 			);
+			name = VCGroups;
 			path = VCVideos;
 			sourceTree = "<group>";
 		};
@@ -262,6 +263,27 @@
 				FB9C133F1C229ABA0049E901 /* LocalizableStringHelper.m */,
 			);
 			path = LocalizationHelper;
+			sourceTree = "<group>";
+		};
+		FBAE180D1C23A05D00316025 /* VCAbout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VCAbout;
+			sourceTree = "<group>";
+		};
+		FBAE180E1C23A05D00316025 /* VCLogin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VCLogin;
+			sourceTree = "<group>";
+		};
+		FBAE180F1C23A05D00316025 /* VCSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VCSettings;
 			sourceTree = "<group>";
 		};
 		FBC1263D1C226CDA00E4E8D3 = {
@@ -331,9 +353,12 @@
 			children = (
 				FB1947331C22A52500068CF1 /* VCBase */,
 				FB4890731C229DE500FB18C5 /* SWRevealViewController */,
-				FB48907A1C229E6000FB18C5 /* VCVideos */,
-				FBC126791C226FE000E4E8D3 /* VCMenu */,
 				FBC1267A1C226FE000E4E8D3 /* VCRoot */,
+				FBC126791C226FE000E4E8D3 /* VCMenu */,
+				FBAE180E1C23A05D00316025 /* VCLogin */,
+				FB48907A1C229E6000FB18C5 /* VCGroups */,
+				FBAE180D1C23A05D00316025 /* VCAbout */,
+				FBAE180F1C23A05D00316025 /* VCSettings */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

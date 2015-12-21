@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "VCRoot.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"VideoSee.sqlite"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     VCRoot *root = [[VCRoot alloc] init];
     [self.window setRootViewController:root];
